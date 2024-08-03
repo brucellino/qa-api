@@ -1,0 +1,12 @@
+# .github/workflows/main.yml
+# Main CI path
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "Hi"
