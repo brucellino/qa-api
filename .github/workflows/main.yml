@@ -22,6 +22,7 @@ jobs:
         run: ./pack build qa-api --path . --builder gcr.io/buildpacks/builder:google-22
 
   release:
+    needs: build
     name: Release
     runs-on: ubuntu-latest
     permissions:
